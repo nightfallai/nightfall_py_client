@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-    api_platform
+    Methods
 
     This API exposes detectors for sensitive data in arbitrary string payloads.  # noqa: E501
 
@@ -39,11 +39,11 @@ class TestScanResponseV2(unittest.TestCase):
                 fragment = '0', 
                 detector_name = '0', 
                 confidence = 'VERY_UNLIKELY', 
-                location = openapi_client.models.scan_response_location.ScanResponse_location(
-                    byte_range = openapi_client.models.scan_response_location_byte_range.ScanResponse_location_byteRange(
+                location = openapi_client.models.scan_response_v2_location.ScanResponseV2_location(
+                    byte_range = openapi_client.models.scan_response_v2_location_byte_range.ScanResponseV2_location_byteRange(
                         start = 56, 
                         end = 56, ), 
-                    unicode_range = openapi_client.models.scan_response_location_unicode_range.ScanResponse_location_unicodeRange(
+                    unicode_range = openapi_client.models.scan_response_v2_location_unicode_range.ScanResponseV2_location_unicodeRange(
                         start = 56, 
                         end = 56, ), )
             )

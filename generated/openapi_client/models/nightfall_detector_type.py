@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-    api_platform
+    Methods
 
     This API exposes detectors for sensitive data in arbitrary string payloads.  # noqa: E501
 

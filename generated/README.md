@@ -77,15 +77,15 @@ configuration = openapi_client.Configuration(
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ScanV1Api(api_client)
-    scan_req_v1 = openapi_client.ScanRequest() # ScanRequest | 
+    api_instance = openapi_client.ScanV2Api(api_client)
+    scan_req_v2 = openapi_client.ScanRequestV2() # ScanRequestV2 | 
 
     try:
         # Scan for sensitive information in your data
-        api_response = api_instance.scan_payload_v1(scan_req_v1)
+        api_response = api_instance.scan_payload_v2(scan_req_v2)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ScanV1Api->scan_payload_v1: %s\n" % e)
+        print("Exception when calling ScanV2Api->scan_payload_v2: %s\n" % e)
     
 ```
 
@@ -95,7 +95,6 @@ All URIs are relative to *https://api.nightfall.ai*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ScanV1Api* | [**scan_payload_v1**](docs/ScanV1Api.md#scan_payload_v1) | **POST** /v1/scan | Scan for sensitive information in your data
 *ScanV2Api* | [**scan_payload_v2**](docs/ScanV2Api.md#scan_payload_v2) | **POST** /v2/scan | Scan for sensitive information in your data
 
 
@@ -110,18 +109,13 @@ Class | Method | HTTP request | Description
  - [ExclusionRule](docs/ExclusionRule.md)
  - [NightfallDetectorType](docs/NightfallDetectorType.md)
  - [Regex](docs/Regex.md)
- - [ScanRequest](docs/ScanRequest.md)
- - [ScanRequestDetectors](docs/ScanRequestDetectors.md)
- - [ScanRequestPayload](docs/ScanRequestPayload.md)
  - [ScanRequestV2](docs/ScanRequestV2.md)
  - [ScanRequestV2Config](docs/ScanRequestV2Config.md)
  - [ScanRequestV2ConfigConditionSet](docs/ScanRequestV2ConfigConditionSet.md)
- - [ScanResponse](docs/ScanResponse.md)
- - [ScanResponseConfidence](docs/ScanResponseConfidence.md)
- - [ScanResponseLocation](docs/ScanResponseLocation.md)
- - [ScanResponseLocationByteRange](docs/ScanResponseLocationByteRange.md)
- - [ScanResponseLocationUnicodeRange](docs/ScanResponseLocationUnicodeRange.md)
  - [ScanResponseV2](docs/ScanResponseV2.md)
+ - [ScanResponseV2Location](docs/ScanResponseV2Location.md)
+ - [ScanResponseV2LocationByteRange](docs/ScanResponseV2LocationByteRange.md)
+ - [ScanResponseV2LocationUnicodeRange](docs/ScanResponseV2LocationUnicodeRange.md)
  - [WordList](docs/WordList.md)
 
 

@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-    api_platform
+    Methods
 
     This API exposes detectors for sensitive data in arbitrary string payloads.  # noqa: E501
 
@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 import openapi_client
-from openapi_client.models.scan_response_location_unicode_range import ScanResponseLocationUnicodeRange  # noqa: E501
+from openapi_client.models.scan_response_v2_location_unicode_range import ScanResponseV2LocationUnicodeRange  # noqa: E501
 from openapi_client.rest import ApiException
 
-class TestScanResponseLocationUnicodeRange(unittest.TestCase):
-    """ScanResponseLocationUnicodeRange unit test stubs"""
+class TestScanResponseV2LocationUnicodeRange(unittest.TestCase):
+    """ScanResponseV2LocationUnicodeRange unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,22 +29,22 @@ class TestScanResponseLocationUnicodeRange(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test ScanResponseLocationUnicodeRange
+        """Test ScanResponseV2LocationUnicodeRange
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.scan_response_location_unicode_range.ScanResponseLocationUnicodeRange()  # noqa: E501
+        # model = openapi_client.models.scan_response_v2_location_unicode_range.ScanResponseV2LocationUnicodeRange()  # noqa: E501
         if include_optional :
-            return ScanResponseLocationUnicodeRange(
+            return ScanResponseV2LocationUnicodeRange(
                 start = 56, 
                 end = 56
             )
         else :
-            return ScanResponseLocationUnicodeRange(
+            return ScanResponseV2LocationUnicodeRange(
         )
 
-    def testScanResponseLocationUnicodeRange(self):
-        """Test ScanResponseLocationUnicodeRange"""
+    def testScanResponseV2LocationUnicodeRange(self):
+        """Test ScanResponseV2LocationUnicodeRange"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 

@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-    api_platform
+    Methods
 
     This API exposes detectors for sensitive data in arbitrary string payloads.  # noqa: E501
 
@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 import openapi_client
-from openapi_client.models.scan_response_confidence import ScanResponseConfidence  # noqa: E501
+from openapi_client.models.scan_response_v2_location_byte_range import ScanResponseV2LocationByteRange  # noqa: E501
 from openapi_client.rest import ApiException
 
-class TestScanResponseConfidence(unittest.TestCase):
-    """ScanResponseConfidence unit test stubs"""
+class TestScanResponseV2LocationByteRange(unittest.TestCase):
+    """ScanResponseV2LocationByteRange unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,21 +29,22 @@ class TestScanResponseConfidence(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test ScanResponseConfidence
+        """Test ScanResponseV2LocationByteRange
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.scan_response_confidence.ScanResponseConfidence()  # noqa: E501
+        # model = openapi_client.models.scan_response_v2_location_byte_range.ScanResponseV2LocationByteRange()  # noqa: E501
         if include_optional :
-            return ScanResponseConfidence(
-                bucket = 'VERY_UNLIKELY'
+            return ScanResponseV2LocationByteRange(
+                start = 56, 
+                end = 56
             )
         else :
-            return ScanResponseConfidence(
+            return ScanResponseV2LocationByteRange(
         )
 
-    def testScanResponseConfidence(self):
-        """Test ScanResponseConfidence"""
+    def testScanResponseV2LocationByteRange(self):
+        """Test ScanResponseV2LocationByteRange"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 
