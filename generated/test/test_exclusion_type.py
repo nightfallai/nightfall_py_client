@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 import openapi_client
-from openapi_client.models.scan_request_detectors import ScanRequestDetectors  # noqa: E501
+from openapi_client.models.exclusion_type import ExclusionType  # noqa: E501
 from openapi_client.rest import ApiException
 
-class TestScanRequestDetectors(unittest.TestCase):
-    """ScanRequestDetectors unit test stubs"""
+class TestExclusionType(unittest.TestCase):
+    """ExclusionType unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,21 +29,20 @@ class TestScanRequestDetectors(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test ScanRequestDetectors
+        """Test ExclusionType
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.scan_request_detectors.ScanRequestDetectors()  # noqa: E501
+        # model = openapi_client.models.exclusion_type.ExclusionType()  # noqa: E501
         if include_optional :
-            return ScanRequestDetectors(
-                name = 'API_KEY'
+            return ExclusionType(
             )
         else :
-            return ScanRequestDetectors(
+            return ExclusionType(
         )
 
-    def testScanRequestDetectors(self):
-        """Test ScanRequestDetectors"""
+    def testExclusionType(self):
+        """Test ExclusionType"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 

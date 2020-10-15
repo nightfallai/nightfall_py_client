@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 import openapi_client
-from openapi_client.models.scan_response_location import ScanResponseLocation  # noqa: E501
+from openapi_client.models.scan_response_v2_location import ScanResponseV2Location  # noqa: E501
 from openapi_client.rest import ApiException
 
-class TestScanResponseLocation(unittest.TestCase):
-    """ScanResponseLocation unit test stubs"""
+class TestScanResponseV2Location(unittest.TestCase):
+    """ScanResponseV2Location unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,26 +29,26 @@ class TestScanResponseLocation(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test ScanResponseLocation
+        """Test ScanResponseV2Location
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.scan_response_location.ScanResponseLocation()  # noqa: E501
+        # model = openapi_client.models.scan_response_v2_location.ScanResponseV2Location()  # noqa: E501
         if include_optional :
-            return ScanResponseLocation(
-                byte_range = openapi_client.models.scan_response_location_byte_range.ScanResponse_location_byteRange(
+            return ScanResponseV2Location(
+                byte_range = openapi_client.models.scan_response_v2_location_byte_range.ScanResponseV2_location_byteRange(
                     start = 56, 
                     end = 56, ), 
-                unicode_range = openapi_client.models.scan_response_location_unicode_range.ScanResponse_location_unicodeRange(
+                unicode_range = openapi_client.models.scan_response_v2_location_unicode_range.ScanResponseV2_location_unicodeRange(
                     start = 56, 
                     end = 56, )
             )
         else :
-            return ScanResponseLocation(
+            return ScanResponseV2Location(
         )
 
-    def testScanResponseLocation(self):
-        """Test ScanResponseLocation"""
+    def testScanResponseV2Location(self):
+        """Test ScanResponseV2Location"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 

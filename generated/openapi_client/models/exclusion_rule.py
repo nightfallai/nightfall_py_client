@@ -33,8 +33,8 @@ class ExclusionRule(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'match_type': 'str',
-        'exclusion_type': 'str',
+        'match_type': 'MatchType',
+        'exclusion_type': 'ExclusionType',
         'regex': 'Regex',
         'word_list': 'WordList'
     }
@@ -71,10 +71,9 @@ class ExclusionRule(object):
     def match_type(self):
         """Gets the match_type of this ExclusionRule.  # noqa: E501
 
-        The match type of exclusion rule.  # noqa: E501
 
         :return: The match_type of this ExclusionRule.  # noqa: E501
-        :rtype: str
+        :rtype: MatchType
         """
         return self._match_type
 
@@ -82,17 +81,10 @@ class ExclusionRule(object):
     def match_type(self, match_type):
         """Sets the match_type of this ExclusionRule.
 
-        The match type of exclusion rule.  # noqa: E501
 
         :param match_type: The match_type of this ExclusionRule.  # noqa: E501
-        :type: str
+        :type: MatchType
         """
-        allowed_values = ["PARTIAL", "FULL"]  # noqa: E501
-        if self.local_vars_configuration.client_side_validation and match_type not in allowed_values:  # noqa: E501
-            raise ValueError(
-                "Invalid value for `match_type` ({0}), must be one of {1}"  # noqa: E501
-                .format(match_type, allowed_values)
-            )
 
         self._match_type = match_type
 
@@ -100,10 +92,9 @@ class ExclusionRule(object):
     def exclusion_type(self):
         """Gets the exclusion_type of this ExclusionRule.  # noqa: E501
 
-        The type of exclusion rule.  # noqa: E501
 
         :return: The exclusion_type of this ExclusionRule.  # noqa: E501
-        :rtype: str
+        :rtype: ExclusionType
         """
         return self._exclusion_type
 
@@ -111,17 +102,10 @@ class ExclusionRule(object):
     def exclusion_type(self, exclusion_type):
         """Sets the exclusion_type of this ExclusionRule.
 
-        The type of exclusion rule.  # noqa: E501
 
         :param exclusion_type: The exclusion_type of this ExclusionRule.  # noqa: E501
-        :type: str
+        :type: ExclusionType
         """
-        allowed_values = ["REGEX", "WORD_LIST"]  # noqa: E501
-        if self.local_vars_configuration.client_side_validation and exclusion_type not in allowed_values:  # noqa: E501
-            raise ValueError(
-                "Invalid value for `exclusion_type` ({0}), must be one of {1}"  # noqa: E501
-                .format(exclusion_type, allowed_values)
-            )
 
         self._exclusion_type = exclusion_type
 

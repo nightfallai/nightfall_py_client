@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 import openapi_client
-from openapi_client.models.scan_request_payload import ScanRequestPayload  # noqa: E501
+from openapi_client.models.match_type import MatchType  # noqa: E501
 from openapi_client.rest import ApiException
 
-class TestScanRequestPayload(unittest.TestCase):
-    """ScanRequestPayload unit test stubs"""
+class TestMatchType(unittest.TestCase):
+    """MatchType unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,23 +29,20 @@ class TestScanRequestPayload(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test ScanRequestPayload
+        """Test MatchType
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.scan_request_payload.ScanRequestPayload()  # noqa: E501
+        # model = openapi_client.models.match_type.MatchType()  # noqa: E501
         if include_optional :
-            return ScanRequestPayload(
-                items = [
-                    '0'
-                    ]
+            return MatchType(
             )
         else :
-            return ScanRequestPayload(
+            return MatchType(
         )
 
-    def testScanRequestPayload(self):
-        """Test ScanRequestPayload"""
+    def testMatchType(self):
+        """Test MatchType"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 

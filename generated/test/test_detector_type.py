@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 import openapi_client
-from openapi_client.models.scan_response_location_byte_range import ScanResponseLocationByteRange  # noqa: E501
+from openapi_client.models.detector_type import DetectorType  # noqa: E501
 from openapi_client.rest import ApiException
 
-class TestScanResponseLocationByteRange(unittest.TestCase):
-    """ScanResponseLocationByteRange unit test stubs"""
+class TestDetectorType(unittest.TestCase):
+    """DetectorType unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,22 +29,20 @@ class TestScanResponseLocationByteRange(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test ScanResponseLocationByteRange
+        """Test DetectorType
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.scan_response_location_byte_range.ScanResponseLocationByteRange()  # noqa: E501
+        # model = openapi_client.models.detector_type.DetectorType()  # noqa: E501
         if include_optional :
-            return ScanResponseLocationByteRange(
-                start = 56, 
-                end = 56
+            return DetectorType(
             )
         else :
-            return ScanResponseLocationByteRange(
+            return DetectorType(
         )
 
-    def testScanResponseLocationByteRange(self):
-        """Test ScanResponseLocationByteRange"""
+    def testDetectorType(self):
+        """Test DetectorType"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 

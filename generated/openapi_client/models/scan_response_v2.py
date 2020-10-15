@@ -36,7 +36,7 @@ class ScanResponseV2(object):
         'fragment': 'str',
         'detector_name': 'str',
         'confidence': 'Confidence',
-        'location': 'ScanResponseLocation'
+        'location': 'ScanResponseV2Location'
     }
 
     attribute_map = {
@@ -140,7 +140,7 @@ class ScanResponseV2(object):
 
 
         :return: The location of this ScanResponseV2.  # noqa: E501
-        :rtype: ScanResponseLocation
+        :rtype: ScanResponseV2Location
         """
         return self._location
 
@@ -150,7 +150,7 @@ class ScanResponseV2(object):
 
 
         :param location: The location of this ScanResponseV2.  # noqa: E501
-        :type: ScanResponseLocation
+        :type: ScanResponseV2Location
         """
 
         self._location = location

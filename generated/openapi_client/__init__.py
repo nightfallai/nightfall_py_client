@@ -17,7 +17,6 @@ from __future__ import absolute_import
 __version__ = "1.0.0"
 
 # import apis into sdk package
-from openapi_client.api.scan_v1_api import ScanV1Api
 from openapi_client.api.scan_v2_api import ScanV2Api
 
 # import ApiClient
@@ -35,20 +34,18 @@ from openapi_client.models.context_rule import ContextRule
 from openapi_client.models.context_rule_confidence_adjustment import ContextRuleConfidenceAdjustment
 from openapi_client.models.context_rule_proximity import ContextRuleProximity
 from openapi_client.models.detector import Detector
+from openapi_client.models.detector_type import DetectorType
 from openapi_client.models.exclusion_rule import ExclusionRule
+from openapi_client.models.exclusion_type import ExclusionType
+from openapi_client.models.match_type import MatchType
 from openapi_client.models.nightfall_detector_type import NightfallDetectorType
 from openapi_client.models.regex import Regex
-from openapi_client.models.scan_request import ScanRequest
-from openapi_client.models.scan_request_detectors import ScanRequestDetectors
-from openapi_client.models.scan_request_payload import ScanRequestPayload
 from openapi_client.models.scan_request_v2 import ScanRequestV2
 from openapi_client.models.scan_request_v2_config import ScanRequestV2Config
 from openapi_client.models.scan_request_v2_config_condition_set import ScanRequestV2ConfigConditionSet
-from openapi_client.models.scan_response import ScanResponse
-from openapi_client.models.scan_response_confidence import ScanResponseConfidence
-from openapi_client.models.scan_response_location import ScanResponseLocation
-from openapi_client.models.scan_response_location_byte_range import ScanResponseLocationByteRange
-from openapi_client.models.scan_response_location_unicode_range import ScanResponseLocationUnicodeRange
 from openapi_client.models.scan_response_v2 import ScanResponseV2
+from openapi_client.models.scan_response_v2_location import ScanResponseV2Location
+from openapi_client.models.scan_response_v2_location_byte_range import ScanResponseV2LocationByteRange
+from openapi_client.models.scan_response_v2_location_unicode_range import ScanResponseV2LocationUnicodeRange
 from openapi_client.models.word_list import WordList
 

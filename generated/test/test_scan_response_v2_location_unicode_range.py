@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 import openapi_client
-from openapi_client.models.scan_request import ScanRequest  # noqa: E501
+from openapi_client.models.scan_response_v2_location_unicode_range import ScanResponseV2LocationUnicodeRange  # noqa: E501
 from openapi_client.rest import ApiException
 
-class TestScanRequest(unittest.TestCase):
-    """ScanRequest unit test stubs"""
+class TestScanResponseV2LocationUnicodeRange(unittest.TestCase):
+    """ScanResponseV2LocationUnicodeRange unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,28 +29,22 @@ class TestScanRequest(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test ScanRequest
+        """Test ScanResponseV2LocationUnicodeRange
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = openapi_client.models.scan_request.ScanRequest()  # noqa: E501
+        # model = openapi_client.models.scan_response_v2_location_unicode_range.ScanResponseV2LocationUnicodeRange()  # noqa: E501
         if include_optional :
-            return ScanRequest(
-                detectors = [
-                    openapi_client.models.scan_request_detectors.ScanRequest_detectors(
-                        name = 'API_KEY', )
-                    ], 
-                payload = openapi_client.models.scan_request_payload.ScanRequest_payload(
-                    items = [
-                        '0'
-                        ], )
+            return ScanResponseV2LocationUnicodeRange(
+                start = 56, 
+                end = 56
             )
         else :
-            return ScanRequest(
+            return ScanResponseV2LocationUnicodeRange(
         )
 
-    def testScanRequest(self):
-        """Test ScanRequest"""
+    def testScanResponseV2LocationUnicodeRange(self):
+        """Test ScanResponseV2LocationUnicodeRange"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 
