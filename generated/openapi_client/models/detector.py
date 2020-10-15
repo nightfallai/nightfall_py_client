@@ -34,7 +34,7 @@ class Detector(object):
     """
     openapi_types = {
         'display_name': 'str',
-        'detector_type': 'str',
+        'detector_type': 'DetectorType',
         'nightfall_detector': 'NightfallDetectorType',
         'regex': 'Regex',
         'word_list': 'WordList',
@@ -109,10 +109,9 @@ class Detector(object):
     def detector_type(self):
         """Gets the detector_type of this Detector.  # noqa: E501
 
-        The type of detector.  # noqa: E501
 
         :return: The detector_type of this Detector.  # noqa: E501
-        :rtype: str
+        :rtype: DetectorType
         """
         return self._detector_type
 
@@ -120,17 +119,10 @@ class Detector(object):
     def detector_type(self, detector_type):
         """Sets the detector_type of this Detector.
 
-        The type of detector.  # noqa: E501
 
         :param detector_type: The detector_type of this Detector.  # noqa: E501
-        :type: str
+        :type: DetectorType
         """
-        allowed_values = ["NIGHTFALL_DETECTOR", "REGEX", "WORD_LIST"]  # noqa: E501
-        if self.local_vars_configuration.client_side_validation and detector_type not in allowed_values:  # noqa: E501
-            raise ValueError(
-                "Invalid value for `detector_type` ({0}), must be one of {1}"  # noqa: E501
-                .format(detector_type, allowed_values)
-            )
 
         self._detector_type = detector_type
 

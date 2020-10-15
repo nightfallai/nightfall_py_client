@@ -20,7 +20,10 @@ from openapi_client.models.context_rule import ContextRule
 from openapi_client.models.context_rule_confidence_adjustment import ContextRuleConfidenceAdjustment
 from openapi_client.models.context_rule_proximity import ContextRuleProximity
 from openapi_client.models.detector import Detector
+from openapi_client.models.detector_type import DetectorType
 from openapi_client.models.exclusion_rule import ExclusionRule
+from openapi_client.models.exclusion_type import ExclusionType
+from openapi_client.models.match_type import MatchType
 from openapi_client.models.nightfall_detector_type import NightfallDetectorType
 from openapi_client.models.regex import Regex
 from openapi_client.models.scan_request_v2 import ScanRequestV2
